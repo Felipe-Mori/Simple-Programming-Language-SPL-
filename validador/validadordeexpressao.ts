@@ -16,6 +16,7 @@ function evaluateSimpleExpression(expression: string): number {
         } else {
             // Se for um operador, realizar a operação nos dois últimos números da pilha
             const b = numbers.pop()!;
+            // O "!" a cima é utilizado para que o compilador entenda que o valor retornado não será 'null' ou 'undefined'
             const a = numbers.pop()!;
             switch (token) {
                 case '+':
@@ -38,7 +39,6 @@ function evaluateSimpleExpression(expression: string): number {
     return numbers.pop()!;
 }
 
-// Exemplo de uso:
 const expression = '12+4*5/2';
 const result = evaluateSimpleExpression(expression);
-console.log(result); // Saída: 17
+console.log(result);
