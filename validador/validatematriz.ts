@@ -30,7 +30,7 @@ function evaluateSimpleExpressionWithMatrix(expression: string): number {
       const b = matrix[0].shift() as number; // Pegar o próximo número
       const operator = matrix[1].shift() as string; // Pegar o primeiro operador
 
-      let result;
+      let result: number = 0;
       switch (operator) {
           case '+':
               result = a + b;

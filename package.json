@@ -1,0 +1,16 @@
+{
+  "name": "simple-programming-language-spl-",
+  "version": "1.0.0",
+  "description": "Nesse projeto temos o objetivo de criar uma nova linguagem de programação, com objetivo de ser uma linguagem mais simples para ajudar futuros programadores.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
