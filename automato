@@ -1,0 +1,48 @@
+class TesteVariaveis {
+    private x: number; // Inteiro
+    private nome: string; // Literal (string)
+
+    constructor() {
+        this.x = 0; // Inicializa x
+        this.nome = ""; // Inicializa nome
+    }
+
+    public run(): void {
+        // Atribui valores às variáveis
+        this.x = 5; // Atribuindo um valor a x
+        this.nome = "João"; // Atribuindo um valor a nome
+
+        // Mostra os valores das variáveis
+        this.show(`O valor de x é: ${this.x}`);
+        this.show(`O nome é: ${this.nome}`);
+
+        // Verificação se x é maior que 3
+        this.check(this.x > 3, () => {
+            this.log("x é maior que 3!");
+        });
+
+        // Loop para contar de 1 a x
+        this.loop: while (this.x > 0) {
+            this.show(this.x); // Exibe o valor atual de x
+            this.x--; // Decrementa x
+        }
+    }
+
+    private check(condition: boolean, action: () => void): void {
+        if (condition) {
+            action();
+        }
+    }
+
+    private show(value: string): void {
+        console.log(value); // Exibe o valor no console
+    }
+
+    private log(message: string): void {
+        console.log(`LOG: ${message}`); // Mensagem de log
+    }
+}
+
+// Cria e executa o teste de variáveis
+const teste = new TesteVariaveis();
+teste.run();
