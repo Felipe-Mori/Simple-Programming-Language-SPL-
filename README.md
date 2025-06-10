@@ -1,7 +1,7 @@
 # Simple Programming Language (SPL)
 
 
-![Capa do Projeto]("![capa-github](https://github.com/user-attachments/assets/55cdbd38-dfc3-427c-86b9-71148e899ad8)")
+![Capa do Projeto]("[capa-github](https://github.com/user-attachments/assets/55cdbd38-dfc3-427c-86b9-71148e899ad8)")
 
 # Sobre o Projeto
 
